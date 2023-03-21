@@ -1,0 +1,16 @@
+.section {
+    background-color: white;
+    margin: 15px;
+    box-shadow: 0 0 15px; 
+}
+
+.section__header {
+    font-size: 30px;
+    padding: 20px; 
+    margin: 0; 
+    border-bottom: 1px solid grey;
+}
+
+.section__body {
+    padding: 20px; 
+}
