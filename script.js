@@ -35,7 +35,7 @@
         });
     };
 
-    function render() {
+    const render = () => {
         let tasksListHTMLContent = "";
 
         for (const task of tasks) {
