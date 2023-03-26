@@ -29,20 +29,20 @@
     const bindToggleDoneEvents = () => {
         const toggleDoneButtons = document.querySelectorAll(".js-toggleDone");
 
-        toggleDoneButtons.forEach((toggleDoneButton, taskIndex)) => {
-        toggleDoneButton.addEventListener("click", () => {
-            toggleTaskDone(taskIndex);
-        });
+        toggleDoneButtons.forEach((toggleDoneButton, taskIndex) => {
+            toggleDoneButton.addEventListener("click", () => {
+                toggleTaskDone(taskIndex);
+            });
+        })
     };
 
     const render = () => {
         let tasksListHTMLContent = "";
 
         for (const task of tasks) {
-            tasksListHTML += `
+            tasksListHTMLContent += `
             <li
-            class="tasks__item js-task"
-            >
+            class="tasks__item js-task">
             <button class="tasks__button tasks__button--toggleDone js-toggleDone">
             ${task.done ? "✓" : ""}
             </button>
@@ -58,7 +58,7 @@
 
         bindRemoveEvents();
         bindToggleDoneEvents();
-    }
+    };
 
     const onFormSubmit = (event) => {
         event.preventDefault();
