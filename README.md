@@ -10,7 +10,7 @@ I used the following programming technologies:
 -Normalize<br>
 -BEM convention
 
-![List](images/To-do List.jpg)
+![List](images/ToDoList.jpg)
 
 ## Link to the To-do List
 
