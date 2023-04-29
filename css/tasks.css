@@ -53,3 +53,27 @@
     background: hsl(348, 76%, 74%);
     }
 
+.section__button--toggle {
+    padding: 10px;
+    background-color: rgb(60, 133, 133);
+    color: white;
+    border: none;
+    transition: 1s;
+    margin: 7px;
+    width: 250px;
+}
+
+.section__button--toggle:hover {
+    background: rgb(78, 163, 163)
+}
+
+.section__button--toggle:active {
+    background: rgb(94, 174, 174)
+}
+
+.section__button {
+    display: flex; 
+   justify-content: flex-end;
+}
+
+
