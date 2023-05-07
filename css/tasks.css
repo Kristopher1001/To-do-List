@@ -13,7 +13,7 @@
     border-bottom: 1px solid grey;
 }
 
-.tasks__Item--hidden {
+.tasks__item--hidden {
     display: none; 
 }
 
