@@ -21,3 +21,10 @@
     border-bottom: 1px solid grey;
     margin: 15px;
 }
+
+@media (max-width: 767px) {
+    .section__layout {
+        display: grid;
+        grid-template-columns: 1fr; 
+    }
+}
