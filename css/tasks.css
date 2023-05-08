@@ -35,6 +35,7 @@
 
 .tasks__button--toggleDone:hover {
     background: hsl(127, 79%, 54%);
+    cursor: pointer;
 }
 
 .tasks__button--toggleDone:active {
@@ -46,14 +47,15 @@
 }
 
 .tasks__button--remove:hover {
-    background: hsl(348, 80%, 68%);
+    background: hsl(348, 88%, 65%);
+    cursor: pointer;
 }
 
 .tasks__button--remove:active {
-    background: hsl(348, 76%, 74%);
+    background: hsl(348, 90%, 66%);
     }
 
-.section__button--toggle {
+.section__buttonToggle {
     padding: 10px;
     background-color: rgb(60, 133, 133);
     color: white;
@@ -63,17 +65,39 @@
     width: 250px;
 }
 
-.section__button--toggle:hover {
-    background: rgb(78, 163, 163)
+.section__buttonToggle:hover {
+    background: rgb(78, 163, 163);
+    cursor: pointer;
 }
 
-.section__button--toggle:active {
+.section__buttonToggle:active {
     background: rgb(94, 174, 174)
+}
+
+.section__buttonToggle:disabled {
+    background: rgb(89, 88, 88);
+    color: rgb(191, 190, 190);
+}
+
+@media (max-width: 767px) {
+    .section__buttonToggle {
+          width: 100%;
+          margin: 5px 20px 5px 20px;
+          border: none;
+    }
 }
 
 .section__button {
     display: flex; 
    justify-content: flex-end;
+   align-items: flex-start;
+}
+
+@media (max-width: 767px) {
+    .section__button {
+        display: grid;
+        grid-template-columns: 1fr; 
+    }
 }
 
 

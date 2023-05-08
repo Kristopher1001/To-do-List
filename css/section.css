@@ -8,9 +8,16 @@
     font-size: 30px;
     padding: 20px; 
     margin: 0; 
-    border-bottom: 1px solid grey;
 }
 
 .section__body {
     padding: 20px; 
+}
+
+.section__layout {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid grey;
+    margin: 15px;
 }

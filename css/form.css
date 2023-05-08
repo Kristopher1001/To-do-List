@@ -26,7 +26,8 @@
 
 .form__button:hover {
     background: rgb(78, 163, 163);
-    transform: scale(1.1);
+    transform: scale(1.2);
+    cursor: pointer;
 }
 
 .form__button:active {
