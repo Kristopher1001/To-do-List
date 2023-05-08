@@ -88,11 +88,13 @@
         }
 
         buttonsElement.innerHTML = `
-        <button class="section__button--toggle js-toggleHideDoneTasks">
+        <button class="section__buttonToggle js-toggleHideDoneTasks" 
+        ${tasks.every(({ done }) => !done) ? "disabled" : ""}
+        >
         ${hideDoneTasks ? "Pokaż" : "Ukryj"} ukończone
         </button>
         <button
-        class="section__button--toggle js-markAllDone"
+        class="section__buttonToggle js-markAllDone"
         ${tasks.every(({ done }) => done) ? "disabled" : ""}
         >
         Ukończ wszystkie
