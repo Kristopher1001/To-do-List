@@ -87,6 +87,24 @@
     }
 }
 
+.section__buttonToggle--hide:disabled {
+    padding: 10px;
+    background-color: rgb(60, 133, 133);
+    color: white;
+    border: none;
+    transition: 1s;
+    margin: 7px;
+    width: 250px;
+}
+
+@media (max-width: 767px) {
+    .section__buttonToggle--hide:disabled {
+          width: 100%;
+          margin: 5px 20px 5px 20px;
+          border: none;
+    }
+}
+
 .section__button {
     display: flex; 
    justify-content: flex-end;
@@ -97,6 +115,7 @@
     .section__button {
         display: grid;
         grid-template-columns: 1fr; 
+        justify-items: center;
     }
 }
 
